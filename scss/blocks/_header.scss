@@ -1,0 +1,123 @@
+/* site header */
+.container{
+    padding: 0px 34px;
+}
+.site-header{
+    padding-top: 32px;
+}
+.site-header__inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.site-header__nav{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    max-width: 243px;
+    background-color: #33323D;
+}
+.site-header__nav-open .site-header__nav{
+    display: block;
+}
+.site-header__nav-open .site-header__btn{
+    background-image: url("../images/header-close-btn.svg");
+    width: 19px;
+    height: 19px;
+}
+.site-header__list{
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    list-style: none;
+    
+    
+}
+.site-header__item{
+    &:first-child{
+        padding-top: 40px;
+    }
+    
+    &:nth-child(2){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
+    &:last-child{
+        padding-bottom: 40px;
+    }
+    
+}
+.site-header__link{
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.site-header__link-active{
+    color: #5FB4A2;
+}
+.site-header__btn{
+    margin-left: auto;
+    background-image: url("../images/header-open-btn.svg");
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 13px;
+}
+
+@include mobile-first (675px){
+    
+    .container{
+        padding: 0px 20px;
+    }
+    .site-header__inner{
+        display: flex;
+    }
+    .site-header__nav{
+        margin-left: auto;
+        width: auto;
+        max-width: none;
+        position: static;
+        top: 0;
+        display: block;
+        background-color: transparent;
+    }
+    .site-header__list{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .site-header__item{
+        &:first-child{
+            padding-top: 0;
+        }
+        
+        &:nth-child(2){
+            padding-right: 43px;
+            padding-left: 43px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    .site-header__link{
+        color: #33323D;
+    }
+    .site-header__link-active{
+        color: #5FB4A2;
+    }
+    .site-header__btn{
+        display: none;
+    }
+    
+}
