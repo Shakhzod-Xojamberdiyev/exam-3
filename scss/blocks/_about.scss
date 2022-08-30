@@ -59,7 +59,7 @@
     .about__wrapper{
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
         align-items: center;
         max-width: none;
@@ -79,7 +79,7 @@
     .about__wrapper{
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
         align-items: center;
         max-width: none;
@@ -89,7 +89,7 @@
         padding-bottom: 36px;
         margin-top: 0;
         width: 100%;
-        max-width: 339px;
+        max-width: 350px;
     }
     
 }

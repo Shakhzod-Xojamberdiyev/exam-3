@@ -590,6 +590,7 @@ body {
 @media only screen and (min-width: 375px) {
   .hero__text-box {
     margin: 0;
+    margin-top: 60px;
   }
 }
 @media only screen and (min-width: 605px) {
@@ -709,9 +710,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -738,9 +739,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -755,7 +756,7 @@ body {
     padding-bottom: 36px;
     margin-top: 0;
     width: 100%;
-    max-width: 339px;
+    max-width: 350px;
   }
 }
 /*SITE ARTICLE*/

@@ -70,6 +70,7 @@ only screen and (                min-resolution: 2dppx) {
 @include mobile-first (375px){
     .hero__text-box{
         margin: 0;
+        margin-top: 60px;
     }
 }
 @include mobile-first (605px){
