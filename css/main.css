@@ -982,7 +982,7 @@ body {
 .login__text-box {
   width: 100%;
   max-width: 689px;
-  padding: 9px 15px 9px 16px;
+  padding: 16px;
   background: #E6E6E7;
   border: 1px solid transparent;
   outline: none;
@@ -1025,6 +1025,7 @@ body {
   letter-spacing: 2px;
   color: #FFFFFF;
   background: #203A4C;
+  border: none;
 }
 
 .login__text-box:not(:-moz-placeholder-shown):not(:focus):valid {
@@ -1098,7 +1099,7 @@ body {
   }
   .contact__text-box {
     padding-top: 40px;
-    width: 630px;
+    width: 634px;
   }
 }
 /*FOOTER*/
