@@ -392,6 +392,10 @@ body {
 }
 
 /* site header */
+.body-scrool {
+  overflow: hidden;
+}
+
 .container {
   padding: 0px 34px;
 }
@@ -473,6 +477,9 @@ body {
 }
 
 @media only screen and (min-width: 675px) {
+  .body-scrool {
+    overflow-y: scroll;
+  }
   .container {
     padding: 0px 20px;
   }
@@ -923,7 +930,7 @@ body {
 /*TITLE*/
 .title {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 500px;
   margin: 0 auto;
   font-family: "Ibarra Real Nova";
   font-weight: 700;
