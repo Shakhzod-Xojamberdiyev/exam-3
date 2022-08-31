@@ -77,6 +77,11 @@
     color: #FFFFFF;
     background: #203A4C;
     border: none;
+    transition: 0.5s;
+
+    &:hover{
+        background: #5FB4A2;
+    }
 }
 
 .login__text-box:not(:placeholder-shown):not(:focus):valid{

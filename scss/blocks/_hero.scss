@@ -49,6 +49,7 @@ only screen and (                min-resolution: 2dppx) {
     letter-spacing: 2px;
     color: #FFFFFF;
     background: #203A4C;
+    transition: 0.5s;
     
     &::before{
         content: "";
