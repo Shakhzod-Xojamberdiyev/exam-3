@@ -44,9 +44,7 @@
 
 @include mobile-first (675px){
     .end__inner{
-        display: flex;
         flex-direction: row;
-        align-items: center;
     }
     .end__list{
         padding-top: 0;

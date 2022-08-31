@@ -1,0 +1,59 @@
+/*TOUCH SECTION*/
+.touch{
+    padding-top: 50px;
+}
+
+.touch__line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #33323D;
+    opacity: 0.15;
+}
+
+.touch__title{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+
+.touch__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.touch__list{
+    @include ul-unstiled;
+    display: flex;
+    align-items: center;
+}
+.touch__item{
+    &:nth-child(2){
+        padding: 0px 16px;
+    }
+}
+
+@include mobile-first (919px){
+    .touch__text-box{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .touch__min-text-box{
+        max-width: 635px;
+        width: 100%;
+    }
+    .touch__text{
+        font-size: 16px;
+    }
+    .touch__title{
+        width: 350px;
+    }
+}

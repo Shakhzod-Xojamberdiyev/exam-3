@@ -1,0 +1,107 @@
+/*CONTACT*/
+
+.contact__inner{
+    padding-top: 34px;
+    padding-bottom: 90px;
+}
+.contact__line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #33323D;
+    opacity: 0.15;
+}
+
+.contact__title{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+
+.login__text{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.8;
+}
+
+.login__text-box{
+    width: 100%;
+    max-width: 689px;
+    padding: 9px 15px 9px 16px;
+    background: #E6E6E7;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:focus{
+        border-color:  #5FB4A2;
+    }
+}
+.login__red-text{
+    opacity: 0;
+    padding-top: 5px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #F43030;
+}
+.login__textarea{
+    width: 100%;
+    max-width: 689px;
+    padding: 9px 15px 57px 16px;
+    background: #E6E6E7;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:focus{
+        border-color: #5FB4A2;
+    }
+}
+.login__btn{
+    margin-top: 24px;
+    display: inline-block;
+    max-width: 200px;
+    padding: 17px 34px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    background: #203A4C;
+}
+
+.login__text-box:not(:placeholder-shown):not(:focus):valid{
+    border: 1px solid #5FB4A2;
+}
+.login__text-box:not(:placeholder-shown):not(:focus):invalid ~.login__red-text{
+    opacity: 1;
+}
+.login__text-box:not(:placeholder-shown):not(:focus):invalid{
+    border: 1px solid #F43030;
+}
+.login__textarea:not(:placeholder-shown):not(:focus):invalid ~.login__red-text{
+    opacity: 1;
+}
+.login__textarea:not(:placeholder-shown):not(:focus):invalid{
+    border: 1px solid #F43030;
+}
+
+@include mobile-first (919px){
+    .contactt__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact__text-box{
+        padding-top: 40px;
+        width: 630px;
+    }
+}
