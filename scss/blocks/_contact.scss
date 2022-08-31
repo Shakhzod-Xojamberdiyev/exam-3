@@ -95,7 +95,7 @@
 }
 
 @include mobile-first (919px){
-    .contactt__box{
+    .contact__box{
         display: flex;
         justify-content: space-between;
     }
